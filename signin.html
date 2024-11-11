@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A website to upload work and bid for job.">
+  <title>Sign up</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="./signup.css">
+  <link rel="stylesheet" href="./media.css">
+  <style>
+    main{
+  display: flex;
+  flex-direction: row-reverse;
+}
+@media only screen and (max-width:768px){
+  main{
+    flex-direction: column;
+  }
+}
+  </style>
+</head>
+
+<body>
+<main>
+  <section class="welcome" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000">
+    <h1>HELLO FRIEND!</h1>
+    <p>Enter your personal details and start your Journey with Us.</p>
+    <a href="./signup.html"><button>Sign up</button></a>
+  </section>
+  
+  <section class="setup" data-aos="slide-up" data-aos-delay="100" data-aos-duration="1000" >
+  <div class="shape"></div>
+    <h2 style="color:black;">Sign In to <span>Find<em>Job</em></span></h2>
+    <form method="post" action="index.html">
+      <div class="icons">
+        <span class="bx bxl-facebook"></span>
+        <span class="bx bxl-google" onclick="onSignIn()"></span>
+        <span class="bx bxl-apple"></span>
+      </div>
+      <h3>Or</h3>
+    
+      <div class="grp">
+        <label for="mail">Email Address</label><br>
+        <input type="email" name="mail" id="mail" required>
+      </div><br>
+      
+        <div class="grp">
+        <label for="pswd">Password</label><br>
+        <input type="password" name="pswd" id="pswd" required minlength="6">
+      </div>
+      <span id="error" style="color:red;">Check your password and try again</span>
+      
+      <br><br>
+      <input type="submit" id="signin" value="Sign In">
+    </form>
+    <p class="question">New here? <a href="signup.html">Sign up</a></p>
+  </section>
+  
+  </main>
+  
+  <script src="./google.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+     <script>
+       AOS.init();
+     </script>
+     
+  <script>
+    let name = document.getElementById("name");
+    let mail = document.getElementById("mail");
+    let job = document.getElementById("job");
+    let pswd = document.getElementById("pswd");
+    let cpass = document.getElementById("cpass");
+
+  </script>
+  </body>
+  </html>

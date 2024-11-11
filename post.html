@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./media.css">
+    <link rel="stylesheet" href="./post.css">
+  <title>Post a Job</title>
+</head>
+
+<body>
+      <nav>
+      <!-- logo -->
+      <div class="logo">
+        Find<span>Job</span>
+      </div>
+      
+      <!-- menu -->
+      <span class="fa fa-bars menu"></span>
+      <!-- nav list-->
+      <ul class="navlist">
+        <li><a href="./index.html" >Home</a></li>
+        <li>Category &dwangle;
+        <ul>
+          <a href="./joblist.html"><li>Part Time</li></a>
+          <a href="./joblist.html"> <li>Full Time</li></a>
+ <a href="./joblist.html"><li>Internship</li></a>
+ <a href="./joblist.html"><li>Temporary</li></a>
+ <a href="./joblist.html"><li>Freelance</li></a>
+        </ul>
+        </li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+       <a href="./post.html"><li>+ Post a Job</li></a>
+      </ul>
+      <a href="signup.html"><button>Get Started</button></a>
+    </nav>
+    <!-- main-->
+    <main>
+      <section class="head">
+          <h1>Post a Job</h1>
+        </section>
+        
+        <section class="addJob">
+              <div class="container">
+        
+                <div class="left">
+                  <form action="" onsubmit="addJob()" method="get">
+                    <div class="grp">
+                      <label for="Jobtitle">Job title</label><br><br>
+                      <input type="text" name="Jobtitle" id="Jobtitle" placeholder="e.g Full stack Development" required />
+                    </div><br />
+                    
+                     <div class="grp">
+                       <label for="company">Company</label><br><br>
+                       <input type="text" name="company" id="company" placeholder="e.g Facebook Inc." required/>
+                     </div><br />
+                     <ul id="jobtype">
+                      <label for="Jobtype">Job Type</label><br><br>
+                       <input type="radio" name="fulltime" id="fulltime">
+                       <label for="Full Time">Full Time</label><br/>
+                                             <input type="radio" name="parttime" id="parttime">
+                            <label for="Part Time">Part Time</label><br/>
+                                 
+                          <input type="radio" name="freelance" id="freelance">
+                          <label for="Freelance">Freelance</label><br/>
+                       <input type="radio" name="internship" id="internship">
+                       <label for="Internship">Internship</label>
+                       <br/>
+                       
+                          <input type="radio" name="remote" id="remote">
+                          <label for="Remote">Remote</label><br/>
+                     </ul>
+                     <br>
+                         <div class="grp">
+                           <label for="location">Location</label><br><br>
+                           <input type="text" name="location" id="location" placeholder="e.g Block 2134, Alabama USA." required/>
+                         </div><br />
+                    <div class="grp">
+                               <label for="desc">Job Requirement</label>
+                            <br><br><textarea name="jobreq" id="jobreq" rows="2" required cols="40"></textarea>
+                             </div><br />
+                             <div class="grp">
+                               <label for="desc">Job Description</label>
+                            <br><br><textarea name="jobdesc" id="jobdesc" rows="8" required cols="40"></textarea>
+                             </div>
+                             <input type="submit" name="post" id="submit" value="Post">
+                  </form>
+                </div>
+        
+                <div class="right">
+              
+      <!-- contact -->
+      <div class="sec5">
+      <h3>Contact Info</h3>
+        <div id="prt1" style="margin-top: 20px;">
+          <h3>Address</h3>
+          <address>
+            No. 14, Akinfenwa Hope Rd, Ibadan, Nigeria.
+          </address>
+        </div>
+        <br>
+         <div id="prt2">
+           <h3>Telephone</h3>
+           <a href="tel: +2349057326602">+2349057326602</a>
+         </div>
+         <br>
+          <div id="prt3">
+            <h3>Email address</h3>
+            <a href="mailto: kayjohnny611@gmail.com">kayjohnny611@gmail.com</a>
+          </div>
+      </div>
+                </div>
+        
+              </div>
+              </section>
+              <!-- faq-->
+         <section class="faq">
+           <h2>Frequently Asked Questions</h2>
+          <details>
+            <summary>What is the name of your Company?</summary>
+            <p>The name ofmy company is FindJob</p>
+          </details>
+       <details>
+           <summary>What is the name of your Company?</summary>
+             <p>The name ofmy company is FindJob</p>
+        </details>
+                  <details>
+                    <summary>What is the name of your Company?</summary>
+                    <p>The name ofmy company is FindJob</p>
+                  </details>
+           <details>
+             <summary>What is the name of your Company?</summary>
+          <p>The name ofmy company is FindJob</p>
+              </details>
+         </section>
+    </main>
+     <footer>
+      <section class="suscribe">
+        <h3>Subscribe to Newsletter</h3>
+        <form action="#" method ="get">
+          <input type="email" name="mail" id="mail">
+          <input type="submit" value="Subscribe">
+        </form>
+      </section>
+      <section class="sect">
+      <!-- candidates -->
+      <div class="sec1">
+        <h3>For Candidates</h3>
+        <ul>
+         <a href="signup.html"><li>Register</li></a>
+          <a href="index.html"><li>Find Job</li></a>
+          <a href="contact.html"><li>Contact</li></a>
+        </ul>
+      </div>
+      
+      <!-- employers -->
+      <div class="sec2">
+        <h3>For Employers</h3>
+         
+         <ul>
+          <a href="signin.html"><li>Employer Account</li></a>
+           <a href="index.html"><li>Find Candidate</li></a>
+           <a href="terms.html"><li>Terms and Conditions</li></a>
+         </ul>
+      </div>
+      
+          <!-- archives -->
+      <div class="sec3">
+        <h3>Archives</h3>
+           <ul>
+           <li>January 2020</li>
+             <li>February 2020</li>
+             <li>January 2023</li>
+             <li>March 2023</li>
+             <li>November 2024</li>
+           </ul>
+      </div>
+      
+      <!-- about -->
+      <div class="sec4">
+        <h3>Company</h3>
+           <ul>
+            <a href="about.html"> <li>About</li></a>
+            <a href="about.html?#team"> <li>Team</li></a>
+            <a href="contact.html"><li>Contact us</li></a>
+             <a href="terms.html"><li>Terms and Conditions</li></a>
+           </ul>
+      </div>
+      
+      <!-- contact -->
+      <div class="sec5">
+      <h3>Contact Info</h3>
+        <div id="prt1" style="margin-top: 20px;">
+          <h3>Address</h3>
+          <address>
+            No. 14, Akinfenwa Hope Rd, Ibadan, Nigeria.
+          </address>
+        </div>
+         <div id="prt2">
+           <h3>Telephone</h3>
+           <a href="tel: +2349057326602">+2349057326602</a>
+         </div>
+          <div id="prt3">
+            <h3>Email address</h3>
+            <a href="mailto: kayjohnny611@gmail.com">kayjohnny611@gmail.com</a>
+          </div>
+      </div>
+      </section>
+      <cite>Copyright &copy; 2024 All Rights Reserved | Developed by johnnittech.</cite>
+    </footer>
+    
+    <script src="./job.js"></script>
+     <script src="./main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
+</body>
+
+</html>

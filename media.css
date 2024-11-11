@@ -1,0 +1,109 @@
+@media only screen and (max-width: 768px){
+  .navlist{
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    padding: 20px;
+    top:100%;
+    right:0;
+    margin-top: 0;
+    transform: translateX(100%);
+    flex-direction: column;
+   align-items: flex-start;
+   background: var(--secondary-text);
+   box-shadow: 2px 2px 5px grey;
+   transition: .8s;
+  }
+  nav .menu{
+    display: block;
+    font-weight: 700;
+    font-size: 30px;
+  }
+  nav .navlist > li:nth-child(2) > ul{
+    width: 100%;
+  }
+  nav ul.navlist>li:last-child {
+    padding: 10px 20px;
+  }
+  nav ul > li{
+   padding:10px 15px;
+  }
+  nav ul.navlist>li:hover,
+  nav .navlist>li:hover a {
+    background: var(--footer-bg);
+    color: var(--secondary-text);
+    width: 100%;
+    
+  }
+  .show{
+    transform: translateX(0);
+  }
+  
+  /* main*/
+  .head form{
+    width:95%;
+    flex-direction: column;
+  }
+ main .jobs {
+   width: 100%;
+   padding: 50px 5vw;
+ }
+
+.container .joblist .contain .left .title span{
+  padding: 5px;
+  font-size: 14px;
+}
+.container .joblist .contain .right{
+  margin-top: 25px;
+}
+
+.addJob .container{
+  width: 100%;
+  flex-direction: column;
+  gap:0;
+}
+.addJob .container .left{
+  width: 100%;
+  padding: 10px 5px;
+}
+
+/* footer */
+  footer section{
+  max-width: 100%;
+  display: flex;
+  flex:1 1 100%;
+  gap:20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .suscribe form{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 10px;
+  
+}
+}
+
+@media only screen and (max-width:600px){
+  .container .joblist .contain{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items:flex-start;
+}
+
+.aboutSect .images{
+  display: none;
+}
+.aboutus{
+  width: 100%;
+}
+.aboutSect{
+  flex-direction: column;
+}
+}
+
+
+  

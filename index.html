@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A website to upload work and bid for job.">
+  <title>Job seeker</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="./media.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+      <!-- logo -->
+      <div class="logo">
+        Find<span>Job</span>
+      </div>
+      
+      <!-- menu -->
+      <span class="fa fa-bars menu"></span>
+      <!-- nav list-->
+      <ul class="navlist">
+        <a href="index.html" ><li>Home</li></a>
+        <li>Category &dwangle;
+        <ul>
+          <a href="joblist.html"><li>Part Time</li></a>
+          <a href="joblist.html"> <li>Full Time</li></a>
+ <a href="joblist.html"><li>Internship</li></a>
+ <a href="joblist.html"><li>Temporary</li></a>
+ <a href="joblist.html"><li>Freelance</li></a>
+        </ul>
+        </li>
+        <a href="./about.html"><li>About</li></a>
+        <a href="./contact.html"><li>Contact</li></a>
+       <a href="./post.html"><li>+ Post a Job</li></a>
+      </ul>
+      
+      <a href="signup.html"><button>Get Started</button></a>
+    </nav>
+    
+    <!-- main container -->
+    <main>
+      <!-- Header -->
+        <section class="head" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
+          <h1 data-aos="slide-right" data-aos-delay="200" data-aos-duration="2000">Get your job opportunity here in an instant.</h1>
+          <div class="btns" data-aos="fade-out-right" data-aos-delay="300" data-aos-duration="3000">
+            <button type="button" class="getJob actives">Get a Job</button>
+              <button type="button" class="findHelp">Find a Candidate</button>
+          </div>
+          <form action="joblist.html" data-aos="fade-down" data-aos-delay="450" data-aos-duration="4000" method="get" class="options">
+            <input type="text" required placeholder="e.g UI/UX designer" name="job" id="job">
+           <select name="category" required id="category">
+             <option value="Choose category">Choose category</option>
+             <option value="Full Time">Full Time</option>
+             <option value="Part Time">Part Time</option>
+             <option value="Freelance">Freelance</option>
+             <option value="Internship">Internship</option>
+             <option value="Remote">Remote</option>
+           </select>
+           
+           <input type="text" name="location" placeholder="Location" id="location">
+           <input type="submit" value="Search" name="search" id="search" class="ping job">
+          </form>
+        </section>
+        <!-- jobs-->
+        <section class="jobs">
+          
+          <div class="container">
+           
+          <div class="top" data-aos="fade-in" data-aos-delay="200" data-aos-duration="2000">
+            <h3>Recent Jobs</h3>
+           <a href="post.html"><button class="button" type="button">+  Post a Job</button></a>
+          </div>
+          <!-- job lists -->
+          <div class="joblist">
+            <!--parent1 list-->
+            <div class="contain">
+              <!-- left content-->
+              <div class="left">
+                <!--job title -->
+                <div class="title">
+                  <h2>Frontend web developer</h2>
+                  <span class="category full">Full Time</span>
+                </div>
+                <!-- location-->
+                <div class="local">
+                  <span class="bx bx-buildings company">Facebook Inc.</span>
+                  <address class="bx bx-current-location">  No.14, Hope Rd, Ibadan, Nigeria</address>
+                </div>
+              </div>
+              <!-- right content-->
+              <div class="right">
+                <span class="fas fa-heart"></span>
+                <a href="./job.html"><button type="button">Bid Job</button>
+                </a>
+              </div>
+            </div>
+            <!-- parent1 list end-->
+            
+                       <!--parent1 list-->
+                       <div class="contain">
+                         <!-- left content-->
+                         <div class="left">
+                           <!--job title -->
+                           <div class="title">
+                             <h2>Frontend web developer</h2>
+                             <span class="category remote">Remote</span>
+                           </div>
+                           <!-- location-->
+                           <div class="local">
+                             <span class="bx bx-buildings company">Facebook Inc.</span>
+                             <address class="bx bx-current-location"> No.14, Hope Rd, Ibadan, Nigeria</address>
+                           </div>
+                         </div>
+                         <!-- right content-->
+                         <div class="right">
+                           <span class="fas fa-heart"></span>
+                           <a href="./job.html"><button type="button">Bid Job</button>
+                         </div></a>
+                       </div>
+                       <!-- parent1 list end-->
+                       
+                                  <!--parent1 list-->
+                                  <div class="contain">
+                                    <!-- left content-->
+                                    <div class="left">
+                                      <!--job title -->
+                                      <div class="title">
+                                        <h2>Frontend web developer And UI/UX Designer</h2>
+                                        <span class="category part">Part Time</span>
+                                      </div>
+                                      <!-- location-->
+                                      <div class="local">
+                                        <span class="bx bx-buildings company">Facebook Inc.</span>
+                                        <address class="bx bx-current-location"> No.14, Hope Rd, Ibadan, Nigeria</address>
+                                      </div>
+                                    </div>
+                                    <!-- right content-->
+                                    <div class="right">
+                                      <span class="fas fa-heart"></span>
+                        <a href="./job.html"> <button type="button">Bid Job</button></a>
+                                    </div>
+                                  </div>
+                                  <!-- parent1 list end-->
+                                  
+                                             <!--parent1 list-->
+                      <div class="contain">
+                                               <!-- left content-->
+                                               <div class="left">
+                                                 <!--job title -->
+                                                 <div class="title">
+                                                   <h2>Frontend web developer</h2>
+                                                   <span class="category intern">Internship</span>
+                                                 </div>
+                                                 <!-- location-->
+                                                 <div class="local">
+                                                   <span class="bx bx-buildings company">Facebook Inc.</span>
+                                                   <address class="bx bx-current-location"> No.14, Hope Rd, Ibadan, Nigeria</address>
+                                                 </div>
+                                               </div>
+                                               <!-- right content-->
+                                               <div class="right">
+                                                 <span class="fas fa-heart"></span>
+                                                <a href="./job.html"> <button type="button">Bid Job</button></a>
+                                               </div>
+                                             </div>
+                                             <!-- parent1 list end-->
+          </div>
+          <!-- end of joblist-->
+           <div class="pagination">
+             <span class="prev">&lt;</span>
+             <span class="step active">1</span>
+             <span class="step">2</span>
+             <span class="step">3</span>
+             <span class="next">&gt;</span>
+           </div>
+          </div>
+          <!-- end of job container -->
+          </div>
+        </section>
+        <!-- reviews -->
+        <section class="reviews">
+          <h1>Customers Review</h1>
+          <div class="row">
+            <!-- review 1-->
+            <div class="review">
+              <img src="./airport-lounge-access-premium_2000x1500.jpg" width="50" alt="profile">
+              <div class="detail">
+                <h2 class="name">Ajala John</h2>
+                <h3>Frontend Web developer</h3>
+                <p class="comment">Ahahshd djdjd sj didjdbd idid disje dudoee ididdud dieb rir didh dirbdid didkd didb did jih utfhub yhij ujjd jdjd di</p>
+              </div>
+            </div>
+                        <!-- review 1-->
+            <div class="review">
+              <img src="./airport-lounge-access-premium_2000x1500.jpg" width="50" alt="profile">
+              <div class="detail">
+                <h2 class="name">Ajala John</h2>
+                <h3>Frontend Web developer</h3>
+                <p class="comment">Ahahshd djdjd sj didjdbd idid disje dudoee ididdud dieb rir didh dirbdid didkd didb did jih utfhub yhij ujjd jdjd di</p>
+              </div>
+            </div>
+            <!-- review 1-->
+            <div class="review">
+              <img src="./airport-lounge-access-premium_2000x1500.jpg" width="50" alt="profile">
+              <div class="detail">
+                <h2 class="name">Ajala John</h2>
+                <h3>Frontend Web developer</h3>
+                <p class="comment">Ahahshd djdjd sj didjdbd idid disje dudoee ididdud dieb rir didh dirbdid didkd didb did jih utfhub yhij ujjd jdjd di</p>
+              </div>
+            </div>
+            <!-- review 1-->
+            <div class="review">
+              <img src="./airport-lounge-access-premium_2000x1500.jpg" width="50" alt="profile">
+              <div class="detail">
+                <h2 class="name">Ajala John</h2>
+                <h3>Frontend Web developer</h3>
+                <p class="comment">Ahahshd djdjd sj didjdbd idid disje dudoee ididdud dieb rir didh dirbdid didkd didb did jih utfhub yhij ujjd jdjd di</p>
+              </div>
+            </div>
+            <!-- review 1-->
+            <div class="review">
+              <img src="./airport-lounge-access-premium_2000x1500.jpg" width="50" alt="profile">
+              <div class="detail">
+                <h2 class="name">Ajala John</h2>
+                <h3>Frontend Web developer</h3>
+                <p class="comment">Ahahshd djdjd sj didjdbd idid disje dudoee ididdud dieb rir didh dirbdid didkd didb did jih utfhub yhij ujjd jdjd di</p>
+              </div>
+            </div>
+          </div>
+        </section>
+    </main>
+    
+    <!-- footer -->
+    <footer>
+      <section class="suscribe">
+        <h3>Subscribe to Newsletter</h3>
+        <form action="#" method ="get">
+          <input type="email" name="mail" id="mail">
+          <input type="submit" value="Subscribe">
+        </form>
+      </section>
+      <section class="sect">
+      <!-- candidates -->
+      <div class="sec1">
+        <h3>For Candidates</h3>
+        <ul>
+         <a href="signup.html"><li>Register</li></a>
+          <a href="index.html"><li>Find Job</li></a>
+          <a href="contact.html"><li>Contact</li></a>
+         
+        </ul>
+      </div>
+      
+      <!-- employers -->
+      <div class="sec2">
+        <h3>For Employers</h3>
+         
+         <ul>
+          <a href="sign.html"><li>Employer Account</li></a>
+           <a href="index.html"><li>Find Candidate</li></a>
+           <a href="terms.html"><li>Terms and Conditions</li></a>
+         </ul>
+      </div>
+      
+          <!-- archives -->
+      <div class="sec3">
+        <h3>Archives</h3>
+           <ul>
+           <li>January 2020</li>
+             <li>February 2020</li>
+             <li>January 2023</li>
+             <li>March 2023</li>
+             <li>November 2024</li>
+           </ul>
+      </div>
+      
+      <!-- about -->
+      <div class="sec4">
+        <h3>Company</h3>
+           <ul>
+            <a href="about.html"> <li>About</li></a>
+            <a href="about.html?#team"> <li>Team</li></a>
+            <a href="contact.html"><li>Contact us</li></a>
+             <a href="terms.html"><li>Terms and Conditions</li></a>
+           </ul>
+      </div>
+      
+      <!-- contact -->
+      <div class="sec5">
+      <h3>Contact Info</h3>
+        <div id="prt1" style="margin-top: 20px;">
+          <h3>Address</h3>
+          <address>
+            No. 14, Akinfenwa Hope Rd, Ibadan, Nigeria.
+          </address>
+        </div>
+         <div id="prt2">
+           <h3>Telephone</h3>
+           <a href="tel: +2349057326602">+2349057326602</a>
+         </div>
+          <div id="prt3">
+            <h3>Email address</h3>
+            <a href="mailto: kayjohnny611@gmail.com">kayjohnny611@gmail.com</a>
+          </div>
+      </div>
+      </section>
+      <cite>Copyright &copy; 2024 All Rights Reserved | Developed by johnnittech.</cite>
+    </footer>
+    
+    <script src="./main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
+
+<script>
+  /* Find Job */
+  document.querySelector(".getJob").addEventListener("click", ()=>{
+document.querySelector(".options .ping").value ="Search Job";
+document.querySelector(".options .ping").classList.remove("candidate");
+document.querySelector(".getJob").style.background="var(--button-bg)";
+document.querySelector(".findHelp").style.background ="transparent";
+document.querySelector(".options .ping").classList.add("job");
+document.querySelector(".options").style.transform ="scale(1.0)";
+})
+/* Find candidate */
+document.querySelector(".findHelp").addEventListener("click", ()=>{
+  document.querySelector(".getJob").style.background ="transparent";
+  document.querySelector(".findHelp").style.background ="var(--button-bg)";
+document.querySelector(".options .ping").value ="Search Candidate";
+document.querySelector(".options .ping").classList.add("candidate");
+document.querySelector(".options .ping").classList.remove("job");
+document.querySelector(".options").style.transform ="scale(1.1)";
+})
+
+</script>
+</body>
+
+</html>          

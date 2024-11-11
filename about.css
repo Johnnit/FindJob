@@ -1,0 +1,63 @@
+.aboutSect{
+  width: 100%;
+  display: flex;
+  gap:20px;
+  justify-content: center;
+  padding: 2vw;
+ /* align-items: center;*/
+}
+.aboutSect .images {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+}
+.aboutSect .images img{
+  width: 100%;
+height: inherit;
+}
+.aboutus {
+  width: 100%;
+  padding: 30px;
+}
+.aboutus h1{
+  text-align: center;
+  font-size: 30px;
+}
+b mark{
+  font-size: 20px;
+}
+
+.team{
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.team h1{
+  font-size: 30px;
+  opacity: 0.7;
+  text-align: center;
+}
+.team .row{
+  width:100%;
+  display:flex;
+  gap:20px;
+  overflow-x:scroll;
+  padding: 20px;
+  justify-content: space-around;
+}
+.team .row .member{
+  padding:15px;
+  background:var(--secondary-text);
+  box-shadow: 2px 2px 6px whitesmoke,
+        -2px -2px 6px whitesmoke;
+ text-align:center;
+}
+.team h3{
+  opacity: 0.8;
+}
+
+.team .row .member img{
+  width: 200px;
+  height: 200px;
+}

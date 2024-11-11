@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A website to upload work and bid for job.">
+  <title>Sign up</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="./signup.css">
+  <link rel="stylesheet" href="./media.css">
+</head>
+
+<body>
+<main>
+  <section class="welcome" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000">
+    <h1>WELCOME BACK!</h1>
+    <p>To keep connected with us, please Login with your personal info.</p>
+    <a href="./signin.html"><button>Sign in</button></a>
+  </section>
+  
+  <section class="setup" data-aos="slide-up" data-aos-delay="100" data-aos-duration="1000" >
+  <div class="shape"></div>
+    <h2>Create Account</h2>
+    <form method="post" action="signin.html">
+      <div class="icons">
+        <span class="bx bxl-facebook"></span>
+        <span class="bx bxl-google"></span>
+        <span class="bx bxl-apple"></span>
+      </div>
+      <h3>Or</h3>
+      <div class="grp">
+        <label for="name">Full Name</label><br>
+        <input type="text" name="name" id="name" required>
+      </div><br>
+      <div class="grp">
+        <label for="mail">Email Address</label><br>
+        <input type="email" name="mail" id="mail" required>
+      </div><br>
+  <div class="grp">
+        <label for="job">Occupatíon</label><br>
+        <input type="text" placeholder="e.g Frontend devoleloper" name="job" id="job">
+      </div><br>
+      
+        <div class="grp">
+        <label for="pswd">Password</label><br>
+        <input type="password" name="pswd" id="pswd" required minlength="6">
+      </div><br>
+      <span id="error" style="color:red;">Check your password and try again</span>
+      <div class="grp">
+        <label for="cpass">Confirm Password</label><br>
+        <input type="password" name="cpass" id="cpass" required minlength="6">
+      </div>
+      <br><br>
+      <input type="submit" id="signup" value="Sign Up">
+    </form>
+    <p class="question">Already have an account? <a href="signin.html">Sign in</a></p>
+  </section>
+  
+  </main>
+  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+       AOS.init();
+     </script>
+  <script>
+    let name = document.getElementById("name");
+    let mail = document.getElementById("mail");
+    let job = document.getElementById("job");
+    let pswd = document.getElementById("pswd");
+    let cpass = document.getElementById("cpass");
+    let ass = document.getElementById("signup");
+ass.onclick =(e)=>{
+  /*e.preventDefault();*/
+  let num = Math.floor(Math.random() * 1000000);
+  let idNum = "#"+ num;
+  console.log(idNum);
+ let pswdVal = pswd.value;
+  let cpswd = cpass.value;
+  if(pswdVal.length != cpswd.length || pswdVal != cpswd){
+    document.getElementById("error").style.display="block";
+    return false;
+  }
+  else{
+    return true;
+  }
+  alert("hhh");
+}
+  </script>
+  </body>
+  </html>

@@ -1,0 +1,73 @@
+.head{
+  background:  url("././airport-lounge-access-premium_2000x1500.jpg") no-repeat;
+  background-size: cover;
+  background-position:center right;
+  min-height: 10vh;
+  text-align: center;
+}
+.head h1{
+  width: 100%;
+  color:var(--secondary-text);
+  font-size: 35px;
+  font-size: clamp(35px, 10vw, 6.25rem);
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+form{
+  position: relative;
+}
+.addJob{
+  padding: 4vw;
+}
+.addJob .container{
+  display: flex;
+  justify-content: center;
+  gap:50px;
+} 
+input[type="text"],
+.grp [type="email"],
+textarea{
+  border:1px solid grey;
+   padding: 10px;
+   width:100%;
+   resize: none;
+   border-radius: 5px;
+}
+.addJob .container .left{
+/*  width: 70%;*/
+  background: white;
+  box-shadow: 2px 2px 5px whitesmoke,
+          -2px -2px 5px whitesmoke;
+          padding: 10px 5vw;
+}
+.addJob .container .right{
+  background: white;
+  box-shadow: 2px 2px 5px whitesmoke,
+          -2px -2px 5px whitesmoke;
+          padding: 10px 5vw;
+          height: max-content;
+}
+
+label{
+  font-weight: 600;
+  font-size: 20px;
+}
+[type="submit"]{
+  background: var(--button-bg);
+  color:var(--secondary-text);
+  padding: 10px 25px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.addJob .container .right address{
+  color:black;
+}
+.faq{
+  text-align: center;
+}
+.faq h2{
+  font-size: 25px;
+}
+footer [type="email"]{
+  padding: 0;
+}
