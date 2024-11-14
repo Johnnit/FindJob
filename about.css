@@ -4,16 +4,15 @@
   gap:20px;
   justify-content: center;
   padding: 2vw;
- /* align-items: center;*/
 }
 .aboutSect .images {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: auto;
 }
 .aboutSect .images img{
   width: 100%;
-height: inherit;
+height: auto;
 }
 .aboutus {
   width: 100%;
