@@ -141,7 +141,7 @@ main{
   width: 100%;
   color:var(--secondary-text);
   font-size: 35px;
-  font-size: clamp(35px, 10vw, 6.25rem);
+  font-size: clamp(35px, 10vw, 4.2rem);
   margin-bottom: 50px;
 }
 .head .btns{
